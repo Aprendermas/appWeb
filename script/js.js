@@ -1,4 +1,4 @@
-var deelse = "su correo no tiene acceso, active acceso en el inicio para acceder a videos-teorias-ejercicios y ejercicios resueltos"
+var deelse = "su correo no tiene acceso,TEMPORALMENTE ESCRIBA (PRUEBA) EN VEZ DEL CORREO "
   var u_1 ="delearnmas@gmail.com"
   var u_2 ="delyjum"
   var u_3 ="user404"
