@@ -1,381 +1,134 @@
+
 <html>
-  <head>
-  <title>EXAMENES</title> 
-  <link rel="shortcut icon" type="image/x-icon" href="../images/logo.png" >
-  
-  <style type="text/css">
-    * { padding: 0; 
-        margin: 0; 
+<head>
+<title>EXAMENES</title> 
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo.png" >
+
+<style type="text/css">
+  * { padding: 0; 
+      margin: 0; 
+    }
+    body{
+      background: rgb(32, 32, 32);
+      color: rgb(204, 200, 193);
+      font-size: 500%;
+    }
+ 
+            .fijo{
+        
+        text-align: center;
+        z-index: 2;
+        
+        color: rgb(245, 235, 235);
+        width: 100%;
+        margin: 0;
+        top:0%;
+        padding: 0;
+        font-size: 75%;
       }
-      body{
-        background: rgb(32, 32, 32);
-        color: rgb(204, 200, 193);
-        font-size: 500%;
-      }
-   
-              .fijo{
-          
-          text-align: center;
-          z-index: 2;
-          
-          color: rgb(245, 235, 235);
-          width: 100%;
-          margin: 0;
-          top:0%;
-          padding: 0;
-          font-size: 55%;
-        }
-       .exas{
-         background: rgb(7, 104, 160);
-       }
-       .faces{
-         background: rgb(66, 68, 70);
-         
-       }
-       .faceso{
-         background: rgb(85, 85, 58);
-         
-       }
-       a{
-         text-decoration: none;
-         color:white;
-       }
-      
+     .exas{
+       background: rgb(7, 104, 160);
+     }
+     .faces{
+       background: rgb(66, 68, 70);
+       
+     }
+     .faceso{
+       background: rgb(85, 85, 58);
+       
+     }
+     a{
+       text-decoration: none;
+       color:white;
+     }
     
-    </style>
   
-  </head>
-  <body>
-  <div class="fijo">
-    
-       <h2 class="exas"><a href="">SIMULACROS</a></h2>
-       <hr>
+  </style>
+
+</head>
+<div class="fijo">
   
-  
-  
-    <hr color="#3ba8c4" height="1" >
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar1();" class="faces">ORDINARIO FASE 1 2020</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar2();" class="faces">UNI</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar3();" class="faces">UNMSM</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar4();" class="faces">UNSAAC</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar5();" class="faces">UNALM</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar6();" class="faces">UNT</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar7();" class="faces">UNA</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar8();" class="faces">UNFV</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar9();" class="faces">UNCP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar10();" class="faces">UNAC</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar11();" class="faces">UNAP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar12();" class="faces">UNP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar13();" class="faces">PUCP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar14();" class="faces">UPCH</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar15();" class="faces">UPC</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar16();" class="faces">UP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar17();" class="faces">UCSUR</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar18();" class="faces">UTEC</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar19();" class="faces">ESAN</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar20();" class="faces">USCP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar21();" class="faces">PNP</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 onclick="ejecutar22();" class="faces">PRONABEC</h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <h2 class="facesO"><a href="https://wa.me/51933406642?text=QUIERO%20OBTENER%20SIMULACROS%20DE%20LA%20UNIVERSIDAD...">MAS</a></h2>
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <hr color="#011223"><hr color="#011223"><hr color="#011223">
-    <br><br><br>
-  </div>
-  
-  <script>
-    function ejecutar1(){
-      var var1 = prompt("INGRESE SU CORREO");
-      if(var1==u_1 || var1==u_2 || var1==u_3 || var1==u_4 || var1==u_5 || var1==u_6 || var1==u_7 || var1==u_8 || var1==u_9 || var1==u_10 || var1==u_11 || var1==u_12 || var1==u_13 || var1==u_14 || var1==u_15 || var1==u_16 || var1==u_17 || var1==u_18 || var1==u_19 || var1==u_20 || var1==u_21 || var1==u_22 || var1==u_23 || var1==u_24 || var1==u_25 || var1==u_26 || var1==u_27 || var1==u_28 || var1==u_29 || var1==u_30 || var1==u_31 || var1==u_32 || var1==u_33 || var1==u_34 || var1==u_35 || var1==u_36 || var1==u_37 || var1==u_38 || var1==u_39 || var1==u_40 || var1==u_41 || var1==u_42 || var1==u_43 || var1==u_44 || var1==u_45 || var1==u_46 || var1==u_47 || var1==u_48 || var1==u_49 || var1==u_50 || var1==u_51 || var1==u_52 || var1==u_53 || var1==u_54 || var1==u_55 || var1==u_56 || var1==u_57 || var1==u_58 || var1==u_59 || var1==u_60 || var1==u_61 || var1==u_62 || var1==u_63 || var1==u_64 || var1==u_65 || var1==u_66 || var1==u_67 || var1==u_68 || var1==u_69 || var1==u_70 || var1==u_71 || var1==u_72 || var1==u_73 || var1==u_74 || var1==u_75 || var1==u_76 || var1==u_77 || var1==u_78 || var1==u_79 || var1==u_80 || var1==u_81 || var1==u_82 || var1==u_83 || var1==u_84 || var1==u_85 || var1==u_86 || var1==u_87 || var1==u_88 || var1==u_89 || var1==u_90 || var1==u_91 || var1==u_92 || var1==u_93 || var1==u_94 || var1==u_95 || var1==u_96 || var1==u_97 || var1==u_98 || var1==u_99 || var1==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar2(){
-      var var2 = prompt("INGRESE SU CORREO");
-      if(var2==u_1 || var2==u_2 || var2==u_3 || var2==u_4 || var2==u_5 || var2==u_6 || var2==u_7 || var2==u_8 || var2==u_9 || var2==u_10 || var2==u_11 || var2==u_12 || var2==u_13 || var2==u_14 || var2==u_15 || var2==u_16 || var2==u_17 || var2==u_18 || var2==u_19 || var2==u_20 || var2==u_21 || var2==u_22 || var2==u_23 || var2==u_24 || var2==u_25 || var2==u_26 || var2==u_27 || var2==u_28 || var2==u_29 || var2==u_30 || var2==u_31 || var2==u_32 || var2==u_33 || var2==u_34 || var2==u_35 || var2==u_36 || var2==u_37 || var2==u_38 || var2==u_39 || var2==u_40 || var2==u_41 || var2==u_42 || var2==u_43 || var2==u_44 || var2==u_45 || var2==u_46 || var2==u_47 || var2==u_48 || var2==u_49 || var2==u_50 || var2==u_51 || var2==u_52 || var2==u_53 || var2==u_54 || var2==u_55 || var2==u_56 || var2==u_57 || var2==u_58 || var2==u_59 || var2==u_60 || var2==u_61 || var2==u_62 || var2==u_63 || var2==u_64 || var2==u_65 || var2==u_66 || var2==u_67 || var2==u_68 || var2==u_69 || var2==u_70 || var2==u_71 || var2==u_72 || var2==u_73 || var2==u_74 || var2==u_75 || var2==u_76 || var2==u_77 || var2==u_78 || var2==u_79 || var2==u_80 || var2==u_81 || var2==u_82 || var2==u_83 || var2==u_84 || var2==u_85 || var2==u_86 || var2==u_87 || var2==u_88 || var2==u_89 || var2==u_90 || var2==u_91 || var2==u_92 || var2==u_93 || var2==u_94 || var2==u_95 || var2==u_96 || var2==u_97 || var2==u_98 || var2==u_99 || var2==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar3(){
-      var var3 = prompt("INGRESE SU CORREO");
-      if(var3==u_1 || var3==u_2 || var3==u_3 || var3==u_4 || var3==u_5 || var3==u_6 || var3==u_7 || var3==u_8 || var3==u_9 || var3==u_10 || var3==u_11 || var3==u_12 || var3==u_13 || var3==u_14 || var3==u_15 || var3==u_16 || var3==u_17 || var3==u_18 || var3==u_19 || var3==u_20 || var3==u_21 || var3==u_22 || var3==u_23 || var3==u_24 || var3==u_25 || var3==u_26 || var3==u_27 || var3==u_28 || var3==u_29 || var3==u_30 || var3==u_31 || var3==u_32 || var3==u_33 || var3==u_34 || var3==u_35 || var3==u_36 || var3==u_37 || var3==u_38 || var3==u_39 || var3==u_40 || var3==u_41 || var3==u_42 || var3==u_43 || var3==u_44 || var3==u_45 || var3==u_46 || var3==u_47 || var3==u_48 || var3==u_49 || var3==u_50 || var3==u_51 || var3==u_52 || var3==u_53 || var3==u_54 || var3==u_55 || var3==u_56 || var3==u_57 || var3==u_58 || var3==u_59 || var3==u_60 || var3==u_61 || var3==u_62 || var3==u_63 || var3==u_64 || var3==u_65 || var3==u_66 || var3==u_67 || var3==u_68 || var3==u_69 || var3==u_70 || var3==u_71 || var3==u_72 || var3==u_73 || var3==u_74 || var3==u_75 || var3==u_76 || var3==u_77 || var3==u_78 || var3==u_79 || var3==u_80 || var3==u_81 || var3==u_82 || var3==u_83 || var3==u_84 || var3==u_85 || var3==u_86 || var3==u_87 || var3==u_88 || var3==u_89 || var3==u_90 || var3==u_91 || var3==u_92 || var3==u_93 || var3==u_94 || var3==u_95 || var3==u_96 || var3==u_97 || var3==u_98 || var3==u_99 || var3==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar4(){
-      var var4 = prompt("INGRESE SU CORREO");
-      if(var4==u_1 || var4==u_2 || var4==u_3 || var4==u_4 || var4==u_5 || var4==u_6 || var4==u_7 || var4==u_8 || var4==u_9 || var4==u_10 || var4==u_11 || var4==u_12 || var4==u_13 || var4==u_14 || var4==u_15 || var4==u_16 || var4==u_17 || var4==u_18 || var4==u_19 || var4==u_20 || var4==u_21 || var4==u_22 || var4==u_23 || var4==u_24 || var4==u_25 || var4==u_26 || var4==u_27 || var4==u_28 || var4==u_29 || var4==u_30 || var4==u_31 || var4==u_32 || var4==u_33 || var4==u_34 || var4==u_35 || var4==u_36 || var4==u_37 || var4==u_38 || var4==u_39 || var4==u_40 || var4==u_41 || var4==u_42 || var4==u_43 || var4==u_44 || var4==u_45 || var4==u_46 || var4==u_47 || var4==u_48 || var4==u_49 || var4==u_50 || var4==u_51 || var4==u_52 || var4==u_53 || var4==u_54 || var4==u_55 || var4==u_56 || var4==u_57 || var4==u_58 || var4==u_59 || var4==u_60 || var4==u_61 || var4==u_62 || var4==u_63 || var4==u_64 || var4==u_65 || var4==u_66 || var4==u_67 || var4==u_68 || var4==u_69 || var4==u_70 || var4==u_71 || var4==u_72 || var4==u_73 || var4==u_74 || var4==u_75 || var4==u_76 || var4==u_77 || var4==u_78 || var4==u_79 || var4==u_80 || var4==u_81 || var4==u_82 || var4==u_83 || var4==u_84 || var4==u_85 || var4==u_86 || var4==u_87 || var4==u_88 || var4==u_89 || var4==u_90 || var4==u_91 || var4==u_92 || var4==u_93 || var4==u_94 || var4==u_95 || var4==u_96 || var4==u_97 || var4==u_98 || var4==u_99 || var4==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar5(){
-      var var5 = prompt("INGRESE SU CORREO");
-      if(var5==u_1 || var5==u_2 || var5==u_3 || var5==u_4 || var5==u_5 || var5==u_6 || var5==u_7 || var5==u_8 || var5==u_9 || var5==u_10 || var5==u_11 || var5==u_12 || var5==u_13 || var5==u_14 || var5==u_15 || var5==u_16 || var5==u_17 || var5==u_18 || var5==u_19 || var5==u_20 || var5==u_21 || var5==u_22 || var5==u_23 || var5==u_24 || var5==u_25 || var5==u_26 || var5==u_27 || var5==u_28 || var5==u_29 || var5==u_30 || var5==u_31 || var5==u_32 || var5==u_33 || var5==u_34 || var5==u_35 || var5==u_36 || var5==u_37 || var5==u_38 || var5==u_39 || var5==u_40 || var5==u_41 || var5==u_42 || var5==u_43 || var5==u_44 || var5==u_45 || var5==u_46 || var5==u_47 || var5==u_48 || var5==u_49 || var5==u_50 || var5==u_51 || var5==u_52 || var5==u_53 || var5==u_54 || var5==u_55 || var5==u_56 || var5==u_57 || var5==u_58 || var5==u_59 || var5==u_60 || var5==u_61 || var5==u_62 || var5==u_63 || var5==u_64 || var5==u_65 || var5==u_66 || var5==u_67 || var5==u_68 || var5==u_69 || var5==u_70 || var5==u_71 || var5==u_72 || var5==u_73 || var5==u_74 || var5==u_75 || var5==u_76 || var5==u_77 || var5==u_78 || var5==u_79 || var5==u_80 || var5==u_81 || var5==u_82 || var5==u_83 || var5==u_84 || var5==u_85 || var5==u_86 || var5==u_87 || var5==u_88 || var5==u_89 || var5==u_90 || var5==u_91 || var5==u_92 || var5==u_93 || var5==u_94 || var5==u_95 || var5==u_96 || var5==u_97 || var5==u_98 || var5==u_99 || var5==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar6(){
-      var var6 = prompt("INGRESE SU CORREO");
-      if(var6==u_1 || var6==u_2 || var6==u_3 || var6==u_4 || var6==u_5 || var6==u_6 || var6==u_7 || var6==u_8 || var6==u_9 || var6==u_10 || var6==u_11 || var6==u_12 || var6==u_13 || var6==u_14 || var6==u_15 || var6==u_16 || var6==u_17 || var6==u_18 || var6==u_19 || var6==u_20 || var6==u_21 || var6==u_22 || var6==u_23 || var6==u_24 || var6==u_25 || var6==u_26 || var6==u_27 || var6==u_28 || var6==u_29 || var6==u_30 || var6==u_31 || var6==u_32 || var6==u_33 || var6==u_34 || var6==u_35 || var6==u_36 || var6==u_37 || var6==u_38 || var6==u_39 || var6==u_40 || var6==u_41 || var6==u_42 || var6==u_43 || var6==u_44 || var6==u_45 || var6==u_46 || var6==u_47 || var6==u_48 || var6==u_49 || var6==u_50 || var6==u_51 || var6==u_52 || var6==u_53 || var6==u_54 || var6==u_55 || var6==u_56 || var6==u_57 || var6==u_58 || var6==u_59 || var6==u_60 || var6==u_61 || var6==u_62 || var6==u_63 || var6==u_64 || var6==u_65 || var6==u_66 || var6==u_67 || var6==u_68 || var6==u_69 || var6==u_70 || var6==u_71 || var6==u_72 || var6==u_73 || var6==u_74 || var6==u_75 || var6==u_76 || var6==u_77 || var6==u_78 || var6==u_79 || var6==u_80 || var6==u_81 || var6==u_82 || var6==u_83 || var6==u_84 || var6==u_85 || var6==u_86 || var6==u_87 || var6==u_88 || var6==u_89 || var6==u_90 || var6==u_91 || var6==u_92 || var6==u_93 || var6==u_94 || var6==u_95 || var6==u_96 || var6==u_97 || var6==u_98 || var6==u_99 || var6==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar7(){
-      var var7 = prompt("INGRESE SU CORREO");
-      if(var7==u_1 || var7==u_2 || var7==u_3 || var7==u_4 || var7==u_5 || var7==u_6 || var7==u_7 || var7==u_8 || var7==u_9 || var7==u_10 || var7==u_11 || var7==u_12 || var7==u_13 || var7==u_14 || var7==u_15 || var7==u_16 || var7==u_17 || var7==u_18 || var7==u_19 || var7==u_20 || var7==u_21 || var7==u_22 || var7==u_23 || var7==u_24 || var7==u_25 || var7==u_26 || var7==u_27 || var7==u_28 || var7==u_29 || var7==u_30 || var7==u_31 || var7==u_32 || var7==u_33 || var7==u_34 || var7==u_35 || var7==u_36 || var7==u_37 || var7==u_38 || var7==u_39 || var7==u_40 || var7==u_41 || var7==u_42 || var7==u_43 || var7==u_44 || var7==u_45 || var7==u_46 || var7==u_47 || var7==u_48 || var7==u_49 || var7==u_50 || var7==u_51 || var7==u_52 || var7==u_53 || var7==u_54 || var7==u_55 || var7==u_56 || var7==u_57 || var7==u_58 || var7==u_59 || var7==u_60 || var7==u_61 || var7==u_62 || var7==u_63 || var7==u_64 || var7==u_65 || var7==u_66 || var7==u_67 || var7==u_68 || var7==u_69 || var7==u_70 || var7==u_71 || var7==u_72 || var7==u_73 || var7==u_74 || var7==u_75 || var7==u_76 || var7==u_77 || var7==u_78 || var7==u_79 || var7==u_80 || var7==u_81 || var7==u_82 || var7==u_83 || var7==u_84 || var7==u_85 || var7==u_86 || var7==u_87 || var7==u_88 || var7==u_89 || var7==u_90 || var7==u_91 || var7==u_92 || var7==u_93 || var7==u_94 || var7==u_95 || var7==u_96 || var7==u_97 || var7==u_98 || var7==u_99 || var7==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar8(){
-      var var8 = prompt("INGRESE SU CORREO");
-      if(var8==u_1 || var8==u_2 || var8==u_3 || var8==u_4 || var8==u_5 || var8==u_6 || var8==u_7 || var8==u_8 || var8==u_9 || var8==u_10 || var8==u_11 || var8==u_12 || var8==u_13 || var8==u_14 || var8==u_15 || var8==u_16 || var8==u_17 || var8==u_18 || var8==u_19 || var8==u_20 || var8==u_21 || var8==u_22 || var8==u_23 || var8==u_24 || var8==u_25 || var8==u_26 || var8==u_27 || var8==u_28 || var8==u_29 || var8==u_30 || var8==u_31 || var8==u_32 || var8==u_33 || var8==u_34 || var8==u_35 || var8==u_36 || var8==u_37 || var8==u_38 || var8==u_39 || var8==u_40 || var8==u_41 || var8==u_42 || var8==u_43 || var8==u_44 || var8==u_45 || var8==u_46 || var8==u_47 || var8==u_48 || var8==u_49 || var8==u_50 || var8==u_51 || var8==u_52 || var8==u_53 || var8==u_54 || var8==u_55 || var8==u_56 || var8==u_57 || var8==u_58 || var8==u_59 || var8==u_60 || var8==u_61 || var8==u_62 || var8==u_63 || var8==u_64 || var8==u_65 || var8==u_66 || var8==u_67 || var8==u_68 || var8==u_69 || var8==u_70 || var8==u_71 || var8==u_72 || var8==u_73 || var8==u_74 || var8==u_75 || var8==u_76 || var8==u_77 || var8==u_78 || var8==u_79 || var8==u_80 || var8==u_81 || var8==u_82 || var8==u_83 || var8==u_84 || var8==u_85 || var8==u_86 || var8==u_87 || var8==u_88 || var8==u_89 || var8==u_90 || var8==u_91 || var8==u_92 || var8==u_93 || var8==u_94 || var8==u_95 || var8==u_96 || var8==u_97 || var8==u_98 || var8==u_99 || var8==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar9(){
-      var var9 = prompt("INGRESE SU CORREO");
-      if(var9==u_1 || var9==u_2 || var9==u_3 || var9==u_4 || var9==u_5 || var9==u_6 || var9==u_7 || var9==u_8 || var9==u_9 || var9==u_10 || var9==u_11 || var9==u_12 || var9==u_13 || var9==u_14 || var9==u_15 || var9==u_16 || var9==u_17 || var9==u_18 || var9==u_19 || var9==u_20 || var9==u_21 || var9==u_22 || var9==u_23 || var9==u_24 || var9==u_25 || var9==u_26 || var9==u_27 || var9==u_28 || var9==u_29 || var9==u_30 || var9==u_31 || var9==u_32 || var9==u_33 || var9==u_34 || var9==u_35 || var9==u_36 || var9==u_37 || var9==u_38 || var9==u_39 || var9==u_40 || var9==u_41 || var9==u_42 || var9==u_43 || var9==u_44 || var9==u_45 || var9==u_46 || var9==u_47 || var9==u_48 || var9==u_49 || var9==u_50 || var9==u_51 || var9==u_52 || var9==u_53 || var9==u_54 || var9==u_55 || var9==u_56 || var9==u_57 || var9==u_58 || var9==u_59 || var9==u_60 || var9==u_61 || var9==u_62 || var9==u_63 || var9==u_64 || var9==u_65 || var9==u_66 || var9==u_67 || var9==u_68 || var9==u_69 || var9==u_70 || var9==u_71 || var9==u_72 || var9==u_73 || var9==u_74 || var9==u_75 || var9==u_76 || var9==u_77 || var9==u_78 || var9==u_79 || var9==u_80 || var9==u_81 || var9==u_82 || var9==u_83 || var9==u_84 || var9==u_85 || var9==u_86 || var9==u_87 || var9==u_88 || var9==u_89 || var9==u_90 || var9==u_91 || var9==u_92 || var9==u_93 || var9==u_94 || var9==u_95 || var9==u_96 || var9==u_97 || var9==u_98 || var9==u_99 || var9==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar10(){
-      var var10 = prompt("INGRESE SU CORREO");
-      if(var10==u_1 || var10==u_2 || var10==u_3 || var10==u_4 || var10==u_5 || var10==u_6 || var10==u_7 || var10==u_8 || var10==u_9 || var10==u_10 || var10==u_11 || var10==u_12 || var10==u_13 || var10==u_14 || var10==u_15 || var10==u_16 || var10==u_17 || var10==u_18 || var10==u_19 || var10==u_20 || var10==u_21 || var10==u_22 || var10==u_23 || var10==u_24 || var10==u_25 || var10==u_26 || var10==u_27 || var10==u_28 || var10==u_29 || var10==u_30 || var10==u_31 || var10==u_32 || var10==u_33 || var10==u_34 || var10==u_35 || var10==u_36 || var10==u_37 || var10==u_38 || var10==u_39 || var10==u_40 || var10==u_41 || var10==u_42 || var10==u_43 || var10==u_44 || var10==u_45 || var10==u_46 || var10==u_47 || var10==u_48 || var10==u_49 || var10==u_50 || var10==u_51 || var10==u_52 || var10==u_53 || var10==u_54 || var10==u_55 || var10==u_56 || var10==u_57 || var10==u_58 || var10==u_59 || var10==u_60 || var10==u_61 || var10==u_62 || var10==u_63 || var10==u_64 || var10==u_65 || var10==u_66 || var10==u_67 || var10==u_68 || var10==u_69 || var10==u_70 || var10==u_71 || var10==u_72 || var10==u_73 || var10==u_74 || var10==u_75 || var10==u_76 || var10==u_77 || var10==u_78 || var10==u_79 || var10==u_80 || var10==u_81 || var10==u_82 || var10==u_83 || var10==u_84 || var10==u_85 || var10==u_86 || var10==u_87 || var10==u_88 || var10==u_89 || var10==u_90 || var10==u_91 || var10==u_92 || var10==u_93 || var10==u_94 || var10==u_95 || var10==u_96 || var10==u_97 || var10==u_98 || var10==u_99 || var10==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar11(){
-      var var11 = prompt("INGRESE SU CORREO");
-      if(var11==u_1 || var11==u_2 || var11==u_3 || var11==u_4 || var11==u_5 || var11==u_6 || var11==u_7 || var11==u_8 || var11==u_9 || var11==u_10 || var11==u_11 || var11==u_12 || var11==u_13 || var11==u_14 || var11==u_15 || var11==u_16 || var11==u_17 || var11==u_18 || var11==u_19 || var11==u_20 || var11==u_21 || var11==u_22 || var11==u_23 || var11==u_24 || var11==u_25 || var11==u_26 || var11==u_27 || var11==u_28 || var11==u_29 || var11==u_30 || var11==u_31 || var11==u_32 || var11==u_33 || var11==u_34 || var11==u_35 || var11==u_36 || var11==u_37 || var11==u_38 || var11==u_39 || var11==u_40 || var11==u_41 || var11==u_42 || var11==u_43 || var11==u_44 || var11==u_45 || var11==u_46 || var11==u_47 || var11==u_48 || var11==u_49 || var11==u_50 || var11==u_51 || var11==u_52 || var11==u_53 || var11==u_54 || var11==u_55 || var11==u_56 || var11==u_57 || var11==u_58 || var11==u_59 || var11==u_60 || var11==u_61 || var11==u_62 || var11==u_63 || var11==u_64 || var11==u_65 || var11==u_66 || var11==u_67 || var11==u_68 || var11==u_69 || var11==u_70 || var11==u_71 || var11==u_72 || var11==u_73 || var11==u_74 || var11==u_75 || var11==u_76 || var11==u_77 || var11==u_78 || var11==u_79 || var11==u_80 || var11==u_81 || var11==u_82 || var11==u_83 || var11==u_84 || var11==u_85 || var11==u_86 || var11==u_87 || var11==u_88 || var11==u_89 || var11==u_90 || var11==u_91 || var11==u_92 || var11==u_93 || var11==u_94 || var11==u_95 || var11==u_96 || var11==u_97 || var11==u_98 || var11==u_99 || var11==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar12(){
-      var var12 = prompt("INGRESE SU CORREO");
-      if(var12==u_1 || var12==u_2 || var12==u_3 || var12==u_4 || var12==u_5 || var12==u_6 || var12==u_7 || var12==u_8 || var12==u_9 || var12==u_10 || var12==u_11 || var12==u_12 || var12==u_13 || var12==u_14 || var12==u_15 || var12==u_16 || var12==u_17 || var12==u_18 || var12==u_19 || var12==u_20 || var12==u_21 || var12==u_22 || var12==u_23 || var12==u_24 || var12==u_25 || var12==u_26 || var12==u_27 || var12==u_28 || var12==u_29 || var12==u_30 || var12==u_31 || var12==u_32 || var12==u_33 || var12==u_34 || var12==u_35 || var12==u_36 || var12==u_37 || var12==u_38 || var12==u_39 || var12==u_40 || var12==u_41 || var12==u_42 || var12==u_43 || var12==u_44 || var12==u_45 || var12==u_46 || var12==u_47 || var12==u_48 || var12==u_49 || var12==u_50 || var12==u_51 || var12==u_52 || var12==u_53 || var12==u_54 || var12==u_55 || var12==u_56 || var12==u_57 || var12==u_58 || var12==u_59 || var12==u_60 || var12==u_61 || var12==u_62 || var12==u_63 || var12==u_64 || var12==u_65 || var12==u_66 || var12==u_67 || var12==u_68 || var12==u_69 || var12==u_70 || var12==u_71 || var12==u_72 || var12==u_73 || var12==u_74 || var12==u_75 || var12==u_76 || var12==u_77 || var12==u_78 || var12==u_79 || var12==u_80 || var12==u_81 || var12==u_82 || var12==u_83 || var12==u_84 || var12==u_85 || var12==u_86 || var12==u_87 || var12==u_88 || var12==u_89 || var12==u_90 || var12==u_91 || var12==u_92 || var12==u_93 || var12==u_94 || var12==u_95 || var12==u_96 || var12==u_97 || var12==u_98 || var12==u_99 || var12==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar13(){
-      var var13 = prompt("INGRESE SU CORREO");
-      if(var13==u_1 || var13==u_2 || var13==u_3 || var13==u_4 || var13==u_5 || var13==u_6 || var13==u_7 || var13==u_8 || var13==u_9 || var13==u_10 || var13==u_11 || var13==u_12 || var13==u_13 || var13==u_14 || var13==u_15 || var13==u_16 || var13==u_17 || var13==u_18 || var13==u_19 || var13==u_20 || var13==u_21 || var13==u_22 || var13==u_23 || var13==u_24 || var13==u_25 || var13==u_26 || var13==u_27 || var13==u_28 || var13==u_29 || var13==u_30 || var13==u_31 || var13==u_32 || var13==u_33 || var13==u_34 || var13==u_35 || var13==u_36 || var13==u_37 || var13==u_38 || var13==u_39 || var13==u_40 || var13==u_41 || var13==u_42 || var13==u_43 || var13==u_44 || var13==u_45 || var13==u_46 || var13==u_47 || var13==u_48 || var13==u_49 || var13==u_50 || var13==u_51 || var13==u_52 || var13==u_53 || var13==u_54 || var13==u_55 || var13==u_56 || var13==u_57 || var13==u_58 || var13==u_59 || var13==u_60 || var13==u_61 || var13==u_62 || var13==u_63 || var13==u_64 || var13==u_65 || var13==u_66 || var13==u_67 || var13==u_68 || var13==u_69 || var13==u_70 || var13==u_71 || var13==u_72 || var13==u_73 || var13==u_74 || var13==u_75 || var13==u_76 || var13==u_77 || var13==u_78 || var13==u_79 || var13==u_80 || var13==u_81 || var13==u_82 || var13==u_83 || var13==u_84 || var13==u_85 || var13==u_86 || var13==u_87 || var13==u_88 || var13==u_89 || var13==u_90 || var13==u_91 || var13==u_92 || var13==u_93 || var13==u_94 || var13==u_95 || var13==u_96 || var13==u_97 || var13==u_98 || var13==u_99 || var13==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar14(){
-      var var14 = prompt("INGRESE SU CORREO");
-      if(var14==u_1 || var14==u_2 || var14==u_3 || var14==u_4 || var14==u_5 || var14==u_6 || var14==u_7 || var14==u_8 || var14==u_9 || var14==u_10 || var14==u_11 || var14==u_12 || var14==u_13 || var14==u_14 || var14==u_15 || var14==u_16 || var14==u_17 || var14==u_18 || var14==u_19 || var14==u_20 || var14==u_21 || var14==u_22 || var14==u_23 || var14==u_24 || var14==u_25 || var14==u_26 || var14==u_27 || var14==u_28 || var14==u_29 || var14==u_30 || var14==u_31 || var14==u_32 || var14==u_33 || var14==u_34 || var14==u_35 || var14==u_36 || var14==u_37 || var14==u_38 || var14==u_39 || var14==u_40 || var14==u_41 || var14==u_42 || var14==u_43 || var14==u_44 || var14==u_45 || var14==u_46 || var14==u_47 || var14==u_48 || var14==u_49 || var14==u_50 || var14==u_51 || var14==u_52 || var14==u_53 || var14==u_54 || var14==u_55 || var14==u_56 || var14==u_57 || var14==u_58 || var14==u_59 || var14==u_60 || var14==u_61 || var14==u_62 || var14==u_63 || var14==u_64 || var14==u_65 || var14==u_66 || var14==u_67 || var14==u_68 || var14==u_69 || var14==u_70 || var14==u_71 || var14==u_72 || var14==u_73 || var14==u_74 || var14==u_75 || var14==u_76 || var14==u_77 || var14==u_78 || var14==u_79 || var14==u_80 || var14==u_81 || var14==u_82 || var14==u_83 || var14==u_84 || var14==u_85 || var14==u_86 || var14==u_87 || var14==u_88 || var14==u_89 || var14==u_90 || var14==u_91 || var14==u_92 || var14==u_93 || var14==u_94 || var14==u_95 || var14==u_96 || var14==u_97 || var14==u_98 || var14==u_99 || var14==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar15(){
-      var var15 = prompt("INGRESE SU CORREO");
-      if(var15==u_1 || var15==u_2 || var15==u_3 || var15==u_4 || var15==u_5 || var15==u_6 || var15==u_7 || var15==u_8 || var15==u_9 || var15==u_10 || var15==u_11 || var15==u_12 || var15==u_13 || var15==u_14 || var15==u_15 || var15==u_16 || var15==u_17 || var15==u_18 || var15==u_19 || var15==u_20 || var15==u_21 || var15==u_22 || var15==u_23 || var15==u_24 || var15==u_25 || var15==u_26 || var15==u_27 || var15==u_28 || var15==u_29 || var15==u_30 || var15==u_31 || var15==u_32 || var15==u_33 || var15==u_34 || var15==u_35 || var15==u_36 || var15==u_37 || var15==u_38 || var15==u_39 || var15==u_40 || var15==u_41 || var15==u_42 || var15==u_43 || var15==u_44 || var15==u_45 || var15==u_46 || var15==u_47 || var15==u_48 || var15==u_49 || var15==u_50 || var15==u_51 || var15==u_52 || var15==u_53 || var15==u_54 || var15==u_55 || var15==u_56 || var15==u_57 || var15==u_58 || var15==u_59 || var15==u_60 || var15==u_61 || var15==u_62 || var15==u_63 || var15==u_64 || var15==u_65 || var15==u_66 || var15==u_67 || var15==u_68 || var15==u_69 || var15==u_70 || var15==u_71 || var15==u_72 || var15==u_73 || var15==u_74 || var15==u_75 || var15==u_76 || var15==u_77 || var15==u_78 || var15==u_79 || var15==u_80 || var15==u_81 || var15==u_82 || var15==u_83 || var15==u_84 || var15==u_85 || var15==u_86 || var15==u_87 || var15==u_88 || var15==u_89 || var15==u_90 || var15==u_91 || var15==u_92 || var15==u_93 || var15==u_94 || var15==u_95 || var15==u_96 || var15==u_97 || var15==u_98 || var15==u_99 || var15==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar16(){
-      var var16 = prompt("INGRESE SU CORREO");
-      if(var16==u_1 || var16==u_2 || var16==u_3 || var16==u_4 || var16==u_5 || var16==u_6 || var16==u_7 || var16==u_8 || var16==u_9 || var16==u_10 || var16==u_11 || var16==u_12 || var16==u_13 || var16==u_14 || var16==u_15 || var16==u_16 || var16==u_17 || var16==u_18 || var16==u_19 || var16==u_20 || var16==u_21 || var16==u_22 || var16==u_23 || var16==u_24 || var16==u_25 || var16==u_26 || var16==u_27 || var16==u_28 || var16==u_29 || var16==u_30 || var16==u_31 || var16==u_32 || var16==u_33 || var16==u_34 || var16==u_35 || var16==u_36 || var16==u_37 || var16==u_38 || var16==u_39 || var16==u_40 || var16==u_41 || var16==u_42 || var16==u_43 || var16==u_44 || var16==u_45 || var16==u_46 || var16==u_47 || var16==u_48 || var16==u_49 || var16==u_50 || var16==u_51 || var16==u_52 || var16==u_53 || var16==u_54 || var16==u_55 || var16==u_56 || var16==u_57 || var16==u_58 || var16==u_59 || var16==u_60 || var16==u_61 || var16==u_62 || var16==u_63 || var16==u_64 || var16==u_65 || var16==u_66 || var16==u_67 || var16==u_68 || var16==u_69 || var16==u_70 || var16==u_71 || var16==u_72 || var16==u_73 || var16==u_74 || var16==u_75 || var16==u_76 || var16==u_77 || var16==u_78 || var16==u_79 || var16==u_80 || var16==u_81 || var16==u_82 || var16==u_83 || var16==u_84 || var16==u_85 || var16==u_86 || var16==u_87 || var16==u_88 || var16==u_89 || var16==u_90 || var16==u_91 || var16==u_92 || var16==u_93 || var16==u_94 || var16==u_95 || var16==u_96 || var16==u_97 || var16==u_98 || var16==u_99 || var16==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar17(){
-      var var17 = prompt("INGRESE SU CORREO");
-      if(var17==u_1 || var17==u_2 || var17==u_3 || var17==u_4 || var17==u_5 || var17==u_6 || var17==u_7 || var17==u_8 || var17==u_9 || var17==u_10 || var17==u_11 || var17==u_12 || var17==u_13 || var17==u_14 || var17==u_15 || var17==u_16 || var17==u_17 || var17==u_18 || var17==u_19 || var17==u_20 || var17==u_21 || var17==u_22 || var17==u_23 || var17==u_24 || var17==u_25 || var17==u_26 || var17==u_27 || var17==u_28 || var17==u_29 || var17==u_30 || var17==u_31 || var17==u_32 || var17==u_33 || var17==u_34 || var17==u_35 || var17==u_36 || var17==u_37 || var17==u_38 || var17==u_39 || var17==u_40 || var17==u_41 || var17==u_42 || var17==u_43 || var17==u_44 || var17==u_45 || var17==u_46 || var17==u_47 || var17==u_48 || var17==u_49 || var17==u_50 || var17==u_51 || var17==u_52 || var17==u_53 || var17==u_54 || var17==u_55 || var17==u_56 || var17==u_57 || var17==u_58 || var17==u_59 || var17==u_60 || var17==u_61 || var17==u_62 || var17==u_63 || var17==u_64 || var17==u_65 || var17==u_66 || var17==u_67 || var17==u_68 || var17==u_69 || var17==u_70 || var17==u_71 || var17==u_72 || var17==u_73 || var17==u_74 || var17==u_75 || var17==u_76 || var17==u_77 || var17==u_78 || var17==u_79 || var17==u_80 || var17==u_81 || var17==u_82 || var17==u_83 || var17==u_84 || var17==u_85 || var17==u_86 || var17==u_87 || var17==u_88 || var17==u_89 || var17==u_90 || var17==u_91 || var17==u_92 || var17==u_93 || var17==u_94 || var17==u_95 || var17==u_96 || var17==u_97 || var17==u_98 || var17==u_99 || var17==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar18(){
-      var var18 = prompt("INGRESE SU CORREO");
-      if(var18==u_1 || var18==u_2 || var18==u_3 || var18==u_4 || var18==u_5 || var18==u_6 || var18==u_7 || var18==u_8 || var18==u_9 || var18==u_10 || var18==u_11 || var18==u_12 || var18==u_13 || var18==u_14 || var18==u_15 || var18==u_16 || var18==u_17 || var18==u_18 || var18==u_19 || var18==u_20 || var18==u_21 || var18==u_22 || var18==u_23 || var18==u_24 || var18==u_25 || var18==u_26 || var18==u_27 || var18==u_28 || var18==u_29 || var18==u_30 || var18==u_31 || var18==u_32 || var18==u_33 || var18==u_34 || var18==u_35 || var18==u_36 || var18==u_37 || var18==u_38 || var18==u_39 || var18==u_40 || var18==u_41 || var18==u_42 || var18==u_43 || var18==u_44 || var18==u_45 || var18==u_46 || var18==u_47 || var18==u_48 || var18==u_49 || var18==u_50 || var18==u_51 || var18==u_52 || var18==u_53 || var18==u_54 || var18==u_55 || var18==u_56 || var18==u_57 || var18==u_58 || var18==u_59 || var18==u_60 || var18==u_61 || var18==u_62 || var18==u_63 || var18==u_64 || var18==u_65 || var18==u_66 || var18==u_67 || var18==u_68 || var18==u_69 || var18==u_70 || var18==u_71 || var18==u_72 || var18==u_73 || var18==u_74 || var18==u_75 || var18==u_76 || var18==u_77 || var18==u_78 || var18==u_79 || var18==u_80 || var18==u_81 || var18==u_82 || var18==u_83 || var18==u_84 || var18==u_85 || var18==u_86 || var18==u_87 || var18==u_88 || var18==u_89 || var18==u_90 || var18==u_91 || var18==u_92 || var18==u_93 || var18==u_94 || var18==u_95 || var18==u_96 || var18==u_97 || var18==u_98 || var18==u_99 || var18==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar19(){
-      var var19 = prompt("INGRESE SU CORREO");
-      if(var19==u_1 || var19==u_2 || var19==u_3 || var19==u_4 || var19==u_5 || var19==u_6 || var19==u_7 || var19==u_8 || var19==u_9 || var19==u_10 || var19==u_11 || var19==u_12 || var19==u_13 || var19==u_14 || var19==u_15 || var19==u_16 || var19==u_17 || var19==u_18 || var19==u_19 || var19==u_20 || var19==u_21 || var19==u_22 || var19==u_23 || var19==u_24 || var19==u_25 || var19==u_26 || var19==u_27 || var19==u_28 || var19==u_29 || var19==u_30 || var19==u_31 || var19==u_32 || var19==u_33 || var19==u_34 || var19==u_35 || var19==u_36 || var19==u_37 || var19==u_38 || var19==u_39 || var19==u_40 || var19==u_41 || var19==u_42 || var19==u_43 || var19==u_44 || var19==u_45 || var19==u_46 || var19==u_47 || var19==u_48 || var19==u_49 || var19==u_50 || var19==u_51 || var19==u_52 || var19==u_53 || var19==u_54 || var19==u_55 || var19==u_56 || var19==u_57 || var19==u_58 || var19==u_59 || var19==u_60 || var19==u_61 || var19==u_62 || var19==u_63 || var19==u_64 || var19==u_65 || var19==u_66 || var19==u_67 || var19==u_68 || var19==u_69 || var19==u_70 || var19==u_71 || var19==u_72 || var19==u_73 || var19==u_74 || var19==u_75 || var19==u_76 || var19==u_77 || var19==u_78 || var19==u_79 || var19==u_80 || var19==u_81 || var19==u_82 || var19==u_83 || var19==u_84 || var19==u_85 || var19==u_86 || var19==u_87 || var19==u_88 || var19==u_89 || var19==u_90 || var19==u_91 || var19==u_92 || var19==u_93 || var19==u_94 || var19==u_95 || var19==u_96 || var19==u_97 || var19==u_98 || var19==u_99 || var19==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar20(){
-      var var20 = prompt("INGRESE SU CORREO");
-      if(var20==u_1 || var20==u_2 || var20==u_3 || var20==u_4 || var20==u_5 || var20==u_6 || var20==u_7 || var20==u_8 || var20==u_9 || var20==u_10 || var20==u_11 || var20==u_12 || var20==u_13 || var20==u_14 || var20==u_15 || var20==u_16 || var20==u_17 || var20==u_18 || var20==u_19 || var20==u_20 || var20==u_21 || var20==u_22 || var20==u_23 || var20==u_24 || var20==u_25 || var20==u_26 || var20==u_27 || var20==u_28 || var20==u_29 || var20==u_30 || var20==u_31 || var20==u_32 || var20==u_33 || var20==u_34 || var20==u_35 || var20==u_36 || var20==u_37 || var20==u_38 || var20==u_39 || var20==u_40 || var20==u_41 || var20==u_42 || var20==u_43 || var20==u_44 || var20==u_45 || var20==u_46 || var20==u_47 || var20==u_48 || var20==u_49 || var20==u_50 || var20==u_51 || var20==u_52 || var20==u_53 || var20==u_54 || var20==u_55 || var20==u_56 || var20==u_57 || var20==u_58 || var20==u_59 || var20==u_60 || var20==u_61 || var20==u_62 || var20==u_63 || var20==u_64 || var20==u_65 || var20==u_66 || var20==u_67 || var20==u_68 || var20==u_69 || var20==u_70 || var20==u_71 || var20==u_72 || var20==u_73 || var20==u_74 || var20==u_75 || var20==u_76 || var20==u_77 || var20==u_78 || var20==u_79 || var20==u_80 || var20==u_81 || var20==u_82 || var20==u_83 || var20==u_84 || var20==u_85 || var20==u_86 || var20==u_87 || var20==u_88 || var20==u_89 || var20==u_90 || var20==u_91 || var20==u_92 || var20==u_93 || var20==u_94 || var20==u_95 || var20==u_96 || var20==u_97 || var20==u_98 || var20==u_99 || var20==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar21(){
-      var var21 = prompt("INGRESE SU CORREO");
-      if(var21==u_1 || var21==u_2 || var21==u_3 || var21==u_4 || var21==u_5 || var21==u_6 || var21==u_7 || var21==u_8 || var21==u_9 || var21==u_10 || var21==u_11 || var21==u_12 || var21==u_13 || var21==u_14 || var21==u_15 || var21==u_16 || var21==u_17 || var21==u_18 || var21==u_19 || var21==u_20 || var21==u_21 || var21==u_22 || var21==u_23 || var21==u_24 || var21==u_25 || var21==u_26 || var21==u_27 || var21==u_28 || var21==u_29 || var21==u_30 || var21==u_31 || var21==u_32 || var21==u_33 || var21==u_34 || var21==u_35 || var21==u_36 || var21==u_37 || var21==u_38 || var21==u_39 || var21==u_40 || var21==u_41 || var21==u_42 || var21==u_43 || var21==u_44 || var21==u_45 || var21==u_46 || var21==u_47 || var21==u_48 || var21==u_49 || var21==u_50 || var21==u_51 || var21==u_52 || var21==u_53 || var21==u_54 || var21==u_55 || var21==u_56 || var21==u_57 || var21==u_58 || var21==u_59 || var21==u_60 || var21==u_61 || var21==u_62 || var21==u_63 || var21==u_64 || var21==u_65 || var21==u_66 || var21==u_67 || var21==u_68 || var21==u_69 || var21==u_70 || var21==u_71 || var21==u_72 || var21==u_73 || var21==u_74 || var21==u_75 || var21==u_76 || var21==u_77 || var21==u_78 || var21==u_79 || var21==u_80 || var21==u_81 || var21==u_82 || var21==u_83 || var21==u_84 || var21==u_85 || var21==u_86 || var21==u_87 || var21==u_88 || var21==u_89 || var21==u_90 || var21==u_91 || var21==u_92 || var21==u_93 || var21==u_94 || var21==u_95 || var21==u_96 || var21==u_97 || var21==u_98 || var21==u_99 || var21==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-    function ejecutar22(){
-      var var22 = prompt("INGRESE SU CORREO");
-      if(var22==u_1 || var22==u_2 || var22==u_3 || var22==u_4 || var22==u_5 || var22==u_6 || var22==u_7 || var22==u_8 || var22==u_9 || var22==u_10 || var22==u_11 || var22==u_12 || var22==u_13 || var22==u_14 || var22==u_15 || var22==u_16 || var22==u_17 || var22==u_18 || var22==u_19 || var22==u_20 || var22==u_21 || var22==u_22 || var22==u_23 || var22==u_24 || var22==u_25 || var22==u_26 || var22==u_27 || var22==u_28 || var22==u_29 || var22==u_30 || var22==u_31 || var22==u_32 || var22==u_33 || var22==u_34 || var22==u_35 || var22==u_36 || var22==u_37 || var22==u_38 || var22==u_39 || var22==u_40 || var22==u_41 || var22==u_42 || var22==u_43 || var22==u_44 || var22==u_45 || var22==u_46 || var22==u_47 || var22==u_48 || var22==u_49 || var22==u_50 || var22==u_51 || var22==u_52 || var22==u_53 || var22==u_54 || var22==u_55 || var22==u_56 || var22==u_57 || var22==u_58 || var22==u_59 || var22==u_60 || var22==u_61 || var22==u_62 || var22==u_63 || var22==u_64 || var22==u_65 || var22==u_66 || var22==u_67 || var22==u_68 || var22==u_69 || var22==u_70 || var22==u_71 || var22==u_72 || var22==u_73 || var22==u_74 || var22==u_75 || var22==u_76 || var22==u_77 || var22==u_78 || var22==u_79 || var22==u_80 || var22==u_81 || var22==u_82 || var22==u_83 || var22==u_84 || var22==u_85 || var22==u_86 || var22==u_87 || var22==u_88 || var22==u_89 || var22==u_90 || var22==u_91 || var22==u_92 || var22==u_93 || var22==u_94 || var22==u_95 || var22==u_96 || var22==u_97 || var22==u_98 || var22==u_99 || var22==u_100){
-        window.open("https://wa.me/51933406642?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...");
-      }
-      else{
-        alert("su correo no tiene acceso, OBTENGA ACCESO en el inicio")
-        window.open("https://aprendermas.github.io/appWeb/");
-      }
-    }
-
-
-      
+     <h2 class="exas"><a href="">EXAMENES</a></h2>
+     <hr>
 
 
 
-  </script>
-    <script type="text/javascript" src="../script/js.js"></script>
-  </body>
-  </html>
+  <hr color="#3ba8c4" height="1" >
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="https://link-hub.net/985253/unsa">UNSA</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNI</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNMSM</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNSAAC</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNALM</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNT</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNA</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNFV</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNCP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNAC</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNAP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UNP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">PUCP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UPCH</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UPC</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UCSUR</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">UTEC</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">ESAN</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">USCP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">PNP</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="faces"><a href="exacontenido.html">PRONABEC</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <h2 class="facesO"><a href="https://wa.me/51925452810?text=QUIERO%20OBTENER%20EXAMEN%20PROCESO...%20AREA...%20FASE...%20AÑO...%20DE%20LA%20UNIVERSIDAD...">MAS</a></h2>
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <hr color="#011223"><hr color="#011223"><hr color="#011223">
+  <br><br><br>
+</div>
+<body>
+
+
+</body>
+<script type="text/javascript" src="../script/js.js"></script>
+</html>
