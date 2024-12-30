@@ -376,6 +376,7 @@
     <head>
         
         <title>Aprender++</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
         <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" >
 		
 
@@ -388,7 +389,273 @@
 		<meta property="og:image"              content="images/logoenlace.png" />
 		
 	<style>
-		/*reglas*/
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Heebo', sans-serif;
+    user-select:none;
+  }
+  
+  
+  .body{
+    width:100vw;
+    height:50vh;
+    background:#000000;
+    position:relative;
+    overflow:hidden;
+    perspective: 600px;
+    font-weight: 100;
+  }
+  
+  
+  .modelName{
+    position:absolute;
+    top:100px;
+    left:100px;
+    font-size:1.2em;
+    color:#eee;
+    text-transform:capitalize;
+  }
+  
+  
+  input[type=range] {
+    position: absolute;
+    bottom: -20px; /* Ajusta la posición para que quede justo debajo */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centrado exacto */
+    width: 200px; /* Ajusta el ancho de la barra */
+    height: 8px; /* Ancho de la barra */
+    -webkit-appearance: none; /* Quita el estilo predeterminado */
+    accent-color: #000; /* Color del control */
+}
+  
+  .range{
+    accent-color:#000;
+  }
+  
+  
+  .laptop{
+    width:100%;
+    height:100%;
+    position:relative;
+    transform-style: preserve-3d;
+    transform:rotateX(60deg) rotateY(160deg);
+  }
+  
+
+
+
+
+  .laptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+	transform:rotateX(360deg) rotateY(360deg);
+    animation: rotateLaptop 5s linear infinite;
+}
+
+@keyframes rotateLaptop {
+    100% {
+        transform: rotateX(60deg) rotateY(160deg);
+    }
+    100% {
+        transform: rotateX(60deg) rotateY(200deg);
+    }
+    100% {
+        transform: rotateX(60deg) rotateY(160deg);
+    }
+}
+
+
+
+
+  
+  .base-top,
+  .base-bottom,
+  .base-front,
+  .base-back,
+  .base-left,
+  .base-right{
+    width:200px;
+    height:150px;
+    position:absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 100px);
+    background:#333;
+  }
+  
+  
+  .base-top{
+    background:#222;
+    transform:translateZ(6px);
+    
+    
+  }
+  
+  
+  .base-bottom{
+    transform:translateZ(0px) rotateY(180deg);
+    background: url(images/IMGTECLADO.jpg);
+       background-size: 190px auto;
+      background-repeat: no-repeat;
+      background-position: center 15px;
+  }
+  
+  
+  .base-bottom:before{
+        position: absolute;
+          content: "";
+          width: 50px;
+          height: 30px;
+      background-color: #bbb;
+          border-radius: 2px;
+          bottom: 8px;
+      left:calc(50% - 25px);
+  }
+  
+  
+  .base-front,
+  .base-back{
+      height: 6px;
+    background:#222;
+  }
+  
+  .base-front{
+    transform:rotateX(90deg) translateZ(3px) translateY(3px);
+    
+  }
+  
+  .base-back{
+      transform:rotateX(90deg) translateZ(-147px) translateY(3px);
+  }
+  
+  
+  .base-left,
+  .base-right{
+      height: 6px;
+    width: 150px;
+    background:#222;
+  }
+  
+  .base-left{
+   transform: rotateY(90deg) rotateZ(90deg) translateZ(125px) translateX(72px) translateY(3px);
+  }
+  
+  .base-right{
+    transform:rotateY(90deg) rotateZ(90deg) translateZ(-74px) translateX(72px) translateY(3px);
+  }
+  
+  
+  
+  .screen{
+    position:absolute;
+    top:calc(50% - 175px);
+    left:calc(50% - 100px);
+    width:200px;
+    height:150px;
+    transform-style: preserve-3d;
+      transition: all .5s;
+    transform-origin: bottom left;
+    transform: rotateX(80deg);
+  
+    
+  }
+  
+  
+  .screenLaptop{
+    transform: rotateX(180deg);
+  }
+  
+  
+  .screen-front,
+  .screen-back{
+      width: 200px;
+      height: 150px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    background:#333;
+  }
+  
+  
+  .screen-front{
+    background:#222;
+    background:url(images/IMGADELANTE.jpg);
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+      background-position: center;
+    overflow: hidden;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+  }
+  
+  
+  
+  .screen-back{
+      background-color:#222;
+      transform: translateZ(3px);
+      background-image: url(images/imagenatras.png);
+      background-size: 65px 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+    
+  }
+  
+  
+  .screen-left,
+  .screen-right{
+    position:absolute;
+    top:0;
+    left:0;
+    width:3px;
+    height:150px;
+    background:#111;
+    
+  }
+  
+  
+  
+  .screen-left{
+    transform:rotateY(90deg) translateX(-1.5px) translateZ(198.5px);
+  }
+  
+  
+  .screen-right{
+    transform:rotateY(90deg) translateX(-1.5px);
+  }
+  
+  
+  .screen-bottom,
+  .screen-top{
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+    height:3px;
+    background:#333;
+  }
+  
+  
+  .screen-bottom{
+    transform:rotateX(90deg) translateZ(-148px) translateY(1.2px);
+    
+  }
+  
+  
+  .screen-top{
+    transform:rotateX(90deg) translateY(1.2px) translateZ(1.5px);
+  }
+  
+  
+  
+  
+
+		/* DESDE ACA YA NO ES PARA PORTATIL */
 
 		*{
 			margin:0;
@@ -417,7 +684,8 @@
 			padding:3% 0%;
 			text-align:center;
 			margin:10% 10%;
-			background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple); 
+			background: linear-gradient(135deg, #0b131c, #2d606b, #499ca3, #9c3c87, #301431);
+
            
             display:block;
         
@@ -470,8 +738,36 @@
 	
     <body>
 	 <div class=lien>	
+			<!--DE ACA DE LAPTOP-->
 			
-			<img src="images/logo.png" width="37%" alt="logo">
+<div class="body">
+    <div class="laptop">
+      <div class="base-top"></div>
+          <div class="base-bottom"></div>
+          <div class="base-left"></div>
+          <div class="base-right"></div>
+          <div class="base-front"></div>
+          <div class="base-back"></div>
+      
+      <div class="screen">
+        <div class="screen-front"></div>
+              <div class="screen-back"></div>
+              <div class="screen-left"></div>
+              <div class="screen-right"></div>
+              <div class="screen-bottom"></div>
+              <div class="screen-top"></div>
+      </div><!---end screen---->
+      
+    </div><!----end laptop--->
+    
+    
+    
+  </div><!---end body--->
+  
+  
+   <input type="range" min="0" max="180" orient="vertical" class="range">
+			<!--HASTA  ACA DE LAPTOP-->
+			
 		
 		
 		<ul>
@@ -503,6 +799,70 @@
 			<p class="footer">Copyright deAprender++. Todos lo derechos reservados.</p>
 		</div>
         </div>
+
+
+<!--DESDE ACA SCRIPT DE LA PORTATIL-->
+		<script>
+      
+
+			let laptop = document.querySelector('.laptop');
+			let range = document.querySelector('.range');
+			let screen = document.querySelector('.screen');
+			
+			
+			range.addEventListener("change",()=>{
+			  
+			  var rangeValue = range.value;
+			  
+			  screen.style.transform = `rotateX(${rangeValue}deg)`;
+			  
+			})
+			
+			
+			
+			let body = document.querySelector('body');
+			
+			
+			body.addEventListener("mousemove",(e)=>{
+			  
+				  var x = e.pageX;
+				  var y = e.pageY;
+			  
+			  laptop.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+			  
+			})
+			
+			
+			var a = 1;
+			
+			body.addEventListener("mousedown", (e) => {
+    laptop.style.animation = "none"; // Desactiva la animación automática
+    if (a == 1) {
+        screen.classList.add('screenLaptop');
+        a = 0;
+    } else {
+        screen.classList.remove('screenLaptop');
+        a = 1;
+    }
+    setTimeout(() => {
+        laptop.style.animation = "rotateLaptop 10s linear infinite";
+    }, 5000);
+})
+			
+			
+			
+			
+			body.addEventListener("touchmove",(e)=>{
+			  
+				  var x = e.touches[0].pageX;
+				  var y = e.touches[0].pageY;
+			  
+			  laptop.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+			  
+			})
+			
+			
+				</script>
   	 
     </body>
 
