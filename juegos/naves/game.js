@@ -308,3 +308,95 @@ function gameLoop() {
  stats_ms.end();
 }
 
+
+
+//PARA MOVIL
+// Agregamos los eventos necesarios para movimiento con clic o toque.
+gameScreen.addEventListener('mousedown', function (e) {
+  handleMouseMove(e.clientX, e.clientY);
+  gameScreen.addEventListener('mousemove', mouseMoveHandler);
+});
+
+gameScreen.addEventListener('mouseup', function () {
+  gameScreen.removeEventListener('mousemove', mouseMoveHandler);
+  keyboard.keychar = null; // Detener movimiento al soltar el clic.
+});
+
+gameScreen.addEventListener('touchstart', function (e) {
+  const touch = e.touches[0];
+  handleMouseMove(touch.clientX, touch.clientY);
+  gameScreen.addEventListener('touchmove', touchMoveHandler);
+});
+
+gameScreen.addEventListener('touchend', function () {
+  gameScreen.removeEventListener('touchmove', touchMoveHandler);
+  keyboard.keychar = null; // Detener movimiento al soltar el toque.
+});
+
+function mouseMoveHandler(e) {
+  handleMouseMove(e.clientX, e.clientY);
+}
+
+function touchMoveHandler(e) {
+  const touch = e.touches[0];
+  handleMouseMove(touch.clientX, touch.clientY);
+}
+
+function handleMouseMove(x, y) {
+  const rect = gameScreen.getBoundingClientRect();
+  const mouseX = x - rect.left;
+  const mouseY = y - rect.top;
+
+  // Calcular la dirección basada en la posición del mouse o toque respecto al personaje.
+  if (mouseX < character.xPos) {
+      keyboard.keychar = keyboard.kLeft();
+  } else if (mouseX > character.xPos + character.image.width) {
+      keyboard.keychar = keyboard.kRight();
+  } else if (mouseY < character.yPos) {
+      keyboard.keychar = keyboard.kUp();
+  } else if (mouseY > character.yPos + character.image.height) {
+      keyboard.keychar = keyboard.kDown();
+  } else {
+      keyboard.keychar = null; // No movimiento si está en el área del personaje.
+  }
+}
+
+
+// Agregamos un botón para disparar en dispositivos móviles.
+const shootButton = document.createElement('button');
+shootButton.innerText = 'FIRE';
+shootButton.style.position = 'absolute';
+shootButton.style.bottom = '20px';
+shootButton.style.left = '20px'; // Cambiado a la parte inferior izquierda dentro del contenedor.
+shootButton.style.width = '80px';
+shootButton.style.height = '80px';
+shootButton.style.borderRadius = '50%';
+shootButton.style.backgroundColor = '#f00';
+shootButton.style.color = '#fff';
+shootButton.style.fontSize = '16px';
+shootButton.style.border = 'none';
+shootButton.style.zIndex = '10';
+
+// Ajustar botón dentro del contenedor del canvas.
+const canvasContainer = gameScreen.parentElement;
+canvasContainer.style.position = 'relative';
+shootButton.style.position = 'absolute';
+shootButton.style.bottom = '20px';
+shootButton.style.left = '20px';
+canvasContainer.appendChild(shootButton);
+
+shootButton.addEventListener('mousedown', function () {
+    keyboard.keychar = ' '; // Simular la barra espaciadora para disparar.
+});
+
+shootButton.addEventListener('mouseup', function () {
+    keyboard.keychar = null; // Detener el disparo al soltar el botón.
+});
+
+shootButton.addEventListener('touchstart', function () {
+    keyboard.keychar = ' '; // Simular la barra espaciadora para disparar.
+});
+
+shootButton.addEventListener('touchend', function () {
+    keyboard.keychar = null; // Detener el disparo al soltar el botón.
+});
