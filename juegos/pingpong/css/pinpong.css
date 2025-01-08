@@ -10,7 +10,7 @@ html {
 
 /* generales */
 body {
-    background-color: rgb(80, 91, 156);
+    background-image: url('../img/fondo.jpg'); /* Ruta de la imagen */
     color: antiquewhite;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 6vw; /* Adaptable al ancho de la pantalla */
-    color: rgb(133, 124, 124);
+    color: rgb(205, 187, 187);
     text-align: center; /* Centrado por defecto */
 }
 

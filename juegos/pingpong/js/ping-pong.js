@@ -164,7 +164,7 @@ function update() {
     conteo = 0;
     resetBall();
   }
-  if(com.score == 20 || user.score== 20){
+  if(com.score == 10 || user.score== 10){
       gameover = true;
   }
   ball.x += ball.velocityX;
@@ -221,3 +221,23 @@ function game() {
 
 let framePerSecond = 50;
 let loop = setInterval(game, 1000 / framePerSecond);
+
+
+//para mover solo con el cursor
+
+canvas.addEventListener("mousemove", getMousePos);
+canvas.addEventListener("touchmove", (evt) => {
+  if (isClicked) {
+    let rect = canvas.getBoundingClientRect();
+    let touch = evt.touches[0]; // Obtiene el primer toque
+    user.y = touch.clientY - rect.top - user.height / 2;
+  }
+});
+
+// Evento para mover la barra con el mouse sin necesidad de hacer clic
+canvas.addEventListener("mousemove", (evt) => {
+  if (!isClicked) {
+    let rect = canvas.getBoundingClientRect();
+    user.y = evt.clientY - rect.top - user.height / 2;
+  }
+});
