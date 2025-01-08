@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* generales */
+body {
+    background-color: rgb(80, 91, 156);
+    color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vw; /* Adaptable al ancho de la pantalla */
+    color: rgb(133, 124, 124);
+    text-align: center; /* Centrado por defecto */
+}
+
+/* utilidades */
+div.contenedor {
+    margin:0; /* Espaciado en proporción */
+    text-align: center;
+    width: 100%; /* Adaptable en porcentaje */
+    max-width: 100%;
+}
+
+/* canvas */
+canvas {
+    max-width: 100%;
+    width: 90%; /* Base adaptable */
+    aspect-ratio: 2 / 1; /* Relación de aspecto: ancho / altura */
+    border: 2px solid rgb(0, 255, 174);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 5vw; /* Escalado proporcional */
+    }
+    canvas {
+        width: 85%; /* Más espacio en pantallas mayores */
+    }
+}
+
+@media only screen and (min-width: 783px) {
+    h1 {
+        font-size: 4vw; /* Tamaño proporcional en pantallas más grandes */
+    }
+    canvas {
+        width: 80%; /* Más reducido para pantallas más grandes */
+        height: auto;
+    }
+}

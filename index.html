@@ -724,6 +724,7 @@
             }
 
             /*DE ACA ES DE DESPLEGAR cursos*/
+            
             #dropdowncursos {
     display: none;
     margin-top: 0px;
@@ -756,7 +757,7 @@
     text-decoration: none;
     border: 2px solid rgb(38, 167, 167);
     background: #2d2d2d;
-    padding: 10px; /* Espacio interno del enlace */
+    padding: 20px; /* Espacio interno del enlace */
     display: block; /* Asegura que ocupe todo el ancho */
     text-align: center;
     margin: 30 15%; /* Espacio mínimo entre los enlaces */
@@ -784,6 +785,69 @@
 }
 
 
+
+
+
+     /*DE ACA ES DE DESPLEGAR juegos*/
+            
+     #dropdownjuegos {
+    display: none;
+    margin-top: 0px;
+    background: #2d2d2d;
+    border-radius: 8px;
+    padding: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 89%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+#dropdownjuegos ul {
+    display: block; /* Asegura una disposición vertical */
+    padding: 0; /* Elimina el espacio interno */
+    margin: 0; /* Elimina el espacio externo */
+}
+
+#dropdownjuegos li {
+    padding: 0; /* Elimina el espacio interno */
+    margin: 0; /* Elimina el espacio externo */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+#dropdownjuegos li a {
+    box-shadow: none;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid rgb(38, 167, 167);
+    background: #2d2d2d;
+    padding: 20px; /* Espacio interno del enlace */
+    display: block; /* Asegura que ocupe todo el ancho */
+    text-align: center;
+    margin: 30 15%; /* Espacio mínimo entre los enlaces */
+}
+
+#dropdownjuegos li a:hover {
+    background-color: #595757;
+}
+
+#close-btnjuegos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#close-btnjuegos:hover {
+    background-color: #ff6666;
+}
 
 	</style>	
 	</head>
@@ -854,12 +918,32 @@
 				</ul>
 			</div>
 			
+
+
     <!--<li><a Target="_blank" href="https://youtu.be/49LmwSKdB1I">¿Como pasar anuncios?</a></li>-->
 			<li><a class="activaracceso" Target="_blank" href="https://wa.me/51925452810?text=QUIERO%20DESACTIVAR%20ANUNCIOS">DESACTIVAR ANUNCIOS</a></li>
 			<li><a Target="_blank" href="https://learncontenido.github.io/novedades/">deAPRENDER++</a></li>
+
+
+
+
+      <li><a href="#" id="examenes-linkjuegos">JUEGOS</a></li>
+      <div id="dropdownjuegos">
+				<button id="close-btnjuegos">Cerrar</button>
+				<br>
+				<ul>
+          <li><a Target="_blank" href="juegos/pingpong/entra/index.html">JUEGO DE PING PONG</a></li>
+          
+          
+				</ul>
+			</div>
 		
+
+
+
 		</ul><br><br><br><br>
 		<p>Utiliza Aprender++ en todos tus dispositivos.</p>
+    <br>
 		<div>
 			<img src="images/disp.png" width="34%">
 		</div>
@@ -946,8 +1030,28 @@
 		closeBtncursos.addEventListener('click', () => {
 			dropdowncursos.style.display = 'none'; // Ocultar la lista desplegable
 		});
+
+    
 	</script>
 
-	
+
+<!--DESDE ACA ES PARA DESPLEGAR SCRIPT de juegos-->
+<script>
+  const examenesLinkjuegos = document.getElementById('examenes-linkjuegos');
+  const dropdownjuegos = document.getElementById('dropdownjuegos');
+  const closeBtnjuegos = document.getElementById('close-btnjuegos');
+
+  examenesLinkjuegos.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado
+    dropdownjuegos.style.display = 'block'; // Mostrar la lista desplegable
+  });
+
+  closeBtnjuegos.addEventListener('click', () => {
+    dropdownjuegos.style.display = 'none'; // Ocultar la lista desplegable
+  });
+
+  
+</script>
+
     </body>
 </html>
