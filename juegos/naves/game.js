@@ -360,14 +360,13 @@ function handleMouseMove(x, y) {
       keyboard.keychar = null; // No movimiento si está en el área del personaje.
   }
 }
-
-
-// Agregamos un botón para disparar en dispositivos móviles.
+// Botón para disparar en dispositivos móviles.
 const shootButton = document.createElement('button');
 shootButton.innerText = 'FIRE';
 shootButton.style.position = 'absolute';
-shootButton.style.bottom = '20px';
-shootButton.style.left = '20px'; // Cambiado a la parte inferior izquierda dentro del contenedor.
+shootButton.style.top = '50%'; // Posicionado en el centro vertical.
+shootButton.style.left = '20px'; // Lado izquierdo.
+shootButton.style.transform = 'translateY(-50%)'; // Ajustar para centrar verticalmente.
 shootButton.style.width = '80px';
 shootButton.style.height = '80px';
 shootButton.style.borderRadius = '50%';
@@ -380,9 +379,6 @@ shootButton.style.zIndex = '10';
 // Ajustar botón dentro del contenedor del canvas.
 const canvasContainer = gameScreen.parentElement;
 canvasContainer.style.position = 'relative';
-shootButton.style.position = 'absolute';
-shootButton.style.bottom = '20px';
-shootButton.style.left = '20px';
 canvasContainer.appendChild(shootButton);
 
 shootButton.addEventListener('mousedown', function () {
@@ -399,4 +395,55 @@ shootButton.addEventListener('touchstart', function () {
 
 shootButton.addEventListener('touchend', function () {
     keyboard.keychar = null; // Detener el disparo al soltar el botón.
+});
+
+// Botón para pantalla completa.
+const fullscreenButton = document.createElement('button');
+fullscreenButton.innerText = 'Fullscreen';
+fullscreenButton.style.position = 'absolute';
+fullscreenButton.style.top = '50%'; // Posicionado en el centro vertical.
+fullscreenButton.style.right = '20px'; // Lado derecho.
+fullscreenButton.style.transform = 'translateY(-50%)'; // Ajustar para centrar verticalmente.
+fullscreenButton.style.width = '80px';
+fullscreenButton.style.height = '80px';
+fullscreenButton.style.borderRadius = '50%';
+fullscreenButton.style.backgroundColor = '#00f';
+fullscreenButton.style.color = '#fff';
+fullscreenButton.style.fontSize = '16px';
+fullscreenButton.style.border = 'none';
+fullscreenButton.style.zIndex = '10';
+canvasContainer.appendChild(fullscreenButton);
+
+fullscreenButton.addEventListener('click', function () {
+    if (!document.fullscreenElement) {
+        canvasContainer.requestFullscreen().catch(err => {
+            console.error(`Error al entrar en pantalla completa: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen().catch(err => {
+            console.error(`Error al salir de pantalla completa: ${err.message}`);
+        });
+    }
+});
+
+// Escuchar el evento keydown globalmente
+document.addEventListener('keydown', function (e) {
+  if (document.fullscreenElement && e.code === 'Space') {
+      e.preventDefault(); // Evita que la barra espaciadora cierre la pantalla completa
+      keyboard.keychar = ' '; // Simula la barra espaciadora para disparar
+  }
+});
+
+// Asegúrate de que la pantalla completa no se cierre al presionar la barra espaciadora
+document.addEventListener('keydown', function (e) {
+  if (e.code === 'Space' && document.fullscreenElement) {
+      e.preventDefault();  // Evita que la pantalla completa se cierre
+  }
+});
+
+// Escuchar el evento keyup para liberar la tecla
+document.addEventListener('keyup', function (e) {
+  if (e.code === 'Space') {
+      keyboard.keychar = null; // Detener el disparo al soltar la barra espaciadora
+  }
 });

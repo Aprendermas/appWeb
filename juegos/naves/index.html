@@ -2,6 +2,14 @@
 <html lang="es">
  <head>
     
+      <!--QUITA ZOOM Y SCROLL-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <!-- Quita el zoom -->
+    <style>
+      body {
+        overflow: hidden; /* Quita el scroll */
+        margin: 0; /* Elimina márgenes */
+      }
+    </style>
 
 
 
@@ -10,7 +18,7 @@
 
 
   <meta charset="UTF-8">
-  <title>html5-goku-en-javascript</title>
+  <title>juego de nave</title>
   <link rel="stylesheet" href="game.css">
  </head>
  <body onkeydown="keyboard.listenKeydown(event);" onkeyup="keyboard.listenKeyup(event);" oncontextmenu="return false;" onload="gameLoop();">

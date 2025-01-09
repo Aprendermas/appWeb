@@ -1,2 +1,10 @@
-body { background-color:aliceblue; margin:0px; text-align:center; }
-#gameScreen { width:800px; height:600px; margin:10px 10px 10px 10px; border:1px solid #888888; box-shadow:10px 10px 20px #888888; }
+body { 
+    background-image: url('Imagenes/FONDO.JPG');
+    margin:0px; 
+    text-align:center; }
+#gameScreen { 
+    width:70%; 
+    height:90%; 
+    margin:5px 0px 5px 5px; 
+    border:1px solid #888888; 
+     }

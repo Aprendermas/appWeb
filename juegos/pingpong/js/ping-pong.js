@@ -241,3 +241,44 @@ canvas.addEventListener("mousemove", (evt) => {
     user.y = evt.clientY - rect.top - user.height / 2;
   }
 });
+
+
+
+
+
+// Crear el botón de pantalla completa
+const fullscreenButton = document.createElement('button');
+fullscreenButton.innerText = 'Fullscreen';
+fullscreenButton.style.position = 'absolute';
+fullscreenButton.style.bottom = '20px';
+fullscreenButton.style.right = '20px'; // Esquina inferior derecha
+fullscreenButton.style.width = '80px';
+fullscreenButton.style.height = '80px';
+fullscreenButton.style.borderRadius = '50%';
+fullscreenButton.style.backgroundColor = '#00f';
+fullscreenButton.style.color = '#fff';
+fullscreenButton.style.fontSize = '16px';
+fullscreenButton.style.border = 'none';
+fullscreenButton.style.zIndex = '10';
+
+// Agregar el botón al cuerpo
+document.body.appendChild(fullscreenButton);
+
+// Evento para activar/desactivar pantalla completa
+fullscreenButton.addEventListener('click', function () {
+    if (!document.fullscreenElement) {
+        document.body.requestFullscreen().catch(err => {
+            console.error(`Error al entrar en pantalla completa: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen().catch(err => {
+            console.error(`Error al salir de pantalla completa: ${err.message}`);
+        });
+    }
+});
+
+
+
+// Escuchar cambios en el tamaño de la ventana
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Llamada inicial para ajustar el canvas
