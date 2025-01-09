@@ -365,7 +365,7 @@ const shootButton = document.createElement('button');
 shootButton.innerText = 'FIRE';
 shootButton.style.position = 'absolute';
 shootButton.style.top = '50%'; // Posicionado en el centro vertical.
-shootButton.style.left = '20px'; // Lado izquierdo.
+shootButton.style.left = '80px'; // Lado izquierdo.
 shootButton.style.transform = 'translateY(-50%)'; // Ajustar para centrar verticalmente.
 shootButton.style.width = '80px';
 shootButton.style.height = '80px';
@@ -446,4 +446,75 @@ document.addEventListener('keyup', function (e) {
   if (e.code === 'Space') {
       keyboard.keychar = null; // Detener el disparo al soltar la barra espaciadora
   }
+});
+
+
+
+
+
+
+
+// Botones de dirección para dispositivos móviles.
+const directionButtons = ['Up', 'Down', 'Left', 'Right'].map(direction => {
+  const button = document.createElement('button');
+  button.innerText = direction;
+  button.style.position = 'absolute';
+  button.style.width = '50px';
+  button.style.height = '40px';
+  button.style.borderRadius = '25%';
+  button.style.backgroundColor = '#00f';
+  button.style.color = '#fff';
+  button.style.fontSize = '16px';
+  button.style.border = 'none';
+  button.style.zIndex = '10';
+
+  return button;
+});
+
+// Estilo y posicionamiento de los botones de dirección.
+directionButtons[0].style.top = '57%'; // Arriba
+directionButtons[1].style.top = '70%'; // Abajo
+directionButtons[2].style.top = '64%'; // Izquierda
+directionButtons[3].style.top = '64%'; // Derecha
+
+directionButtons[0].style.left = '6%'; // Arriba
+directionButtons[1].style.left = '6%'; // Abajo
+directionButtons[2].style.left = '2%';  // Izquierda
+directionButtons[3].style.left = '10%'; // Derecha
+
+canvasContainer.appendChild(directionButtons[0]);
+canvasContainer.appendChild(directionButtons[1]);
+canvasContainer.appendChild(directionButtons[2]);
+canvasContainer.appendChild(directionButtons[3]);
+
+// Función para mover el personaje según el botón presionado.
+directionButtons[0].addEventListener('mousedown', function () {
+  keyboard.keychar = keyboard.kUp();
+});
+directionButtons[1].addEventListener('mousedown', function () {
+  keyboard.keychar = keyboard.kDown();
+});
+directionButtons[2].addEventListener('mousedown', function () {
+  keyboard.keychar = keyboard.kLeft();
+});
+directionButtons[3].addEventListener('mousedown', function () {
+  keyboard.keychar = keyboard.kRight();
+});
+
+// Detener el movimiento al soltar el botón.
+directionButtons.forEach(button => {
+  button.addEventListener('mouseup', function () {
+      keyboard.keychar = null;
+  });
+
+  button.addEventListener('touchstart', function () {
+      keyboard.keychar = button.innerText === 'Up' ? keyboard.kUp() :
+                         button.innerText === 'Down' ? keyboard.kDown() :
+                         button.innerText === 'Left' ? keyboard.kLeft() :
+                         button.innerText === 'Right' ? keyboard.kRight() : null;
+  });
+
+  button.addEventListener('touchend', function () {
+      keyboard.keychar = null;
+  });
 });
