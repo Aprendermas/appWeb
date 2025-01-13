@@ -363,6 +363,10 @@ function handleMouseMove(x, y) {
 // Botón para disparar en dispositivos móviles.
 const shootButton = document.createElement('button');
 shootButton.innerText = 'FIRE';
+shootButton.style.userSelect = 'none'; // Desactiva la selección
+shootButton.style.msUserSelect = 'none'; // Compatibilidad con IE/Edge
+
+
 shootButton.style.position = 'absolute';
 shootButton.style.top = '50%'; // Posicionado en el centro vertical.
 shootButton.style.left = '80px'; // Lado izquierdo.
@@ -479,8 +483,8 @@ directionButtons[3].style.top = '64%'; // Derecha
 
 directionButtons[0].style.left = '6%'; // Arriba
 directionButtons[1].style.left = '6%'; // Abajo
-directionButtons[2].style.left = '2%';  // Izquierda
-directionButtons[3].style.left = '10%'; // Derecha
+directionButtons[2].style.left = '1%';  // Izquierda
+directionButtons[3].style.left = '11%'; // Derecha
 
 canvasContainer.appendChild(directionButtons[0]);
 canvasContainer.appendChild(directionButtons[1]);
