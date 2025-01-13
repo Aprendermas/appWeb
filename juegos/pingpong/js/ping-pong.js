@@ -215,7 +215,9 @@ function game() {
     update();
     render();
   } else {
-    drawText("GAME OVER", canvas.width / 8, canvas.height / 2);
+    // Cambiar a un mensaje más detallado
+    const message = user.score === 10 ? "YOU WIN!" : "YOU LOSE!";
+    drawText(message, canvas.width / 8, canvas.height / 2);
   }
 }
 
